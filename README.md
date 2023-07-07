@@ -63,3 +63,43 @@ creating repositories, or interacting with APIs.
 | git push [alias] [branch] | Transmit local branch commits to the remote repository branch | 
 | git pull | fetch and merge any commits from the tracking remote branch |
 
+
+#### **Share & Update**
+
+| Git | Description |
+| ------ | ------ |
+| git rm [file] | delete the file from project and stage the removal for commit |
+| git mv [existing-path] [new-path] | change an existing file path and stage the move |
+| git log --stat -M | show all commit logs with indication of any paths that moved |
+
+
+#### **Temporary Commits**
+
+| Git | Description |
+| ------ | ------ |
+| git stash | Save modified and staged changes |
+| git stash list | list stack-order of stashed file changes |
+| git stash pop | write working from top of stash stack |
+| git stash drop | discard the changes from top of stash stack |
+
+#### **Rewrite History**
+
+| Git | Description |
+| ------ | ------ |
+| git rebase [branch] | apply any commits of current branch ahead of specified one |
+| git reset --hard [commit] | clear staging area, rewrite working tree from specified commit |
+
+#### **Ignoring Patterns**
+
+- Preventing unintentional staging or commiting of files
+
+***logs/***
+
+****.notes***
+
+***pattern***/*
+> Save a file with desired paterns as .gitignore with either direct string
+matches or wildcard globs.
+
+- git config --global core.excludesfile [file]
+> system wide ignore patern for all local repositories
