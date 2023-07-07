@@ -105,7 +105,7 @@ matches or wildcard globs.
 > system wide ignore patern for all local repositories
 
 
-## Github commands most used in the real project
+## Most used Github commands in the real project
 - git clone
 > This commands allows us to create a local copy of a remote Git repository on our local computer
 - git add
