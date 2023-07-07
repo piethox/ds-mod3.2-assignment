@@ -103,3 +103,14 @@ matches or wildcard globs.
 
 - git config --global core.excludesfile [file]
 > system wide ignore patern for all local repositories
+
+
+## Github commands most used in the real project
+- git clone
+> This commands allows us to create a local copy of a remote Git repository on our local computer
+- git add
+> It important because it stages change for commit
+- git commit
+> To commit our staged content, it creates a permanent snapshot of the staged changes in our repository
+- git push
+> Important to transmit local branch commits to the remote repository
